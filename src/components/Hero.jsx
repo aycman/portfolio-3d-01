@@ -26,13 +26,13 @@ const Hero = () => {
                         Providing the best Project experience
                     </h1>
                     <p className='max-w-[400px]'>
-                        WITH OVER FOUR YEARS OF REFINED EXPERTISE THIS DESIGNER HAS METICULOUSLY CRAFTED SEAMLESS AND INTUITIVE USER EXPERIENCES
+                        BUILDING SEAMLESS, INTUITIVE WEB INTERFACES TO BRING YOUR BRAND'S DIGITAL VISION TO LIFE
                     </p>
                 </div>
 
                 <div className='mt-5'>
                     <a href="#" className='w-[208px] h-[33px] inline-flex items-center justify-center border border-gray-400 rounded-full text-sm tracking-wider contact-button'>
-                        <i className='inline-flex items-center justify-center gap-1'><SendAlt className="w-5 h-5 text-gray-300" />CONTACT ME</i>
+                        <i className='contact-text inline-flex items-center justify-center gap-1'><SendAlt className="w-5 h-5 text-gray-300" />CONTACT ME</i>
                     </a>
                 </div>
             </div>
@@ -49,7 +49,7 @@ const Hero = () => {
 
         <div data-aos="fade-up"
      data-aos-anchor-placement="top-bottom"
-     data-aos-delay="400"
+     data-aos-delay="200"
                 className=''>
             <h1 className='xl:text-8xl lg:text-7xl md:text-6xl text-3xl font-extrabold mb-8 tracking-wider text-center bg-gradient-radial from-white to-gray-600 bg-clip-text text-transparent [@media(max-width:380px)]:mb-2'>
                 WEB DEVELOPER

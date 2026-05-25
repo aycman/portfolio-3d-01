@@ -144,7 +144,21 @@
   .contact-button:hover{
     box-shadow: inset 0px 10px 20px rgba(139, 108, 46, 0.702);
   }
+
+
+
+  .contact-text:hover {
+  color: #e3d2a5;
+  letter-spacing: 1px;
+  text-shadow:
+    0 0 5px rgba(212, 175, 55, 0.6),
+    0 0 15px rgba(212, 175, 55, 0.4),
+    0 0 25px rgba(255, 215, 0, 0.3);
+  transition: all 0.3s ease;
 }
+}
+
+
 
 @layer utilities{
   .bg-gradient-radial{
