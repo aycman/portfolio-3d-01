@@ -7,3 +7,149 @@
     @apply bg-black text-white relative font-sans h-screen  overflow-hidden
   }
 }
+
+@layer components{
+  /* .introducing-container{
+    position: absolute;
+    inset: 0 0 0 0;
+    z-index: -1;
+    border-radius: 20px;
+    background: linear-gradient(45deg, #9657de, #383abe, #389ec9, #5248c4, #9657de);
+  } */
+
+ .parent {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.introducing-container {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+
+  border-radius: 20px;
+
+  background: linear-gradient(
+    45deg,
+    #3a2b12,
+    #6e531f,
+    #8b6c2e,
+    #d4af37,
+    #8b6c2e,
+    #5c4519
+  );
+
+  background-size: 250% 250%;
+
+  animation: goldGradientMove 8s ease infinite;
+
+  box-shadow:
+    0 6px 20px rgba(0, 0, 0, 0.35),
+    0 0 18px rgba(212, 175, 55, 0.12);
+}
+
+/* content */
+.content {
+  position: relative;
+  z-index: 2;
+}
+
+/* golden shine */
+.introducing-container::before {
+  content: "";
+
+  position: absolute;
+  top: -150%;
+  left: -60%;
+
+  width: 30%;
+  height: 400%;
+
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 215, 120, 0.85),
+    rgba(255, 255, 255, 0.05),
+    transparent
+  );
+
+  transform: rotate(25deg);
+
+  opacity: 0;
+
+  transition:
+    left 0.9s ease,
+    opacity 0.3s ease;
+}
+
+/* hover effect */
+.parent:hover .introducing-container::before {
+  left: 140%;
+  opacity: 1;
+}
+
+.parent:hover .introducing-container {
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.45),
+    0 0 28px rgba(212, 175, 55, 0.28);
+}
+
+/* moving gradient */
+@keyframes goldGradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+
+.button-text {
+  position: relative;
+  display: inline-block;
+  color: #ededed;
+  transition: all 0.3s ease;
+}
+
+.button-text:hover {
+  color: #e3d2a5;
+  letter-spacing: 0.5px;
+  text-shadow:
+    0 0 5px rgba(212, 175, 55, 0.6),
+    0 0 15px rgba(212, 175, 55, 0.4),
+    0 0 25px rgba(255, 215, 0, 0.3);
+}
+
+
+
+
+
+
+
+
+
+  .contact-button{
+    box-shadow: inset 4px 4px 7px rgba(24, 29, 20, 0.25);
+    transition: all 0.3s ease;
+  }
+  .contact-button:hover{
+    box-shadow: inset 0px 10px 20px rgba(139, 108, 46, 0.702);
+  }
+}
+
+@layer utilities{
+  .bg-gradient-radial{
+    background-image: radial-gradient(circle at 50% 70%, var(--tw-gradient-stops));
+  }
+
+}
+

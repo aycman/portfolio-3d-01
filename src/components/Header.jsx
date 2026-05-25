@@ -3,9 +3,11 @@ import { Github, Linkedin, Twitter, Home, Whatsapp } from '@boxicons/react';
 
 const Header = () => {
   return (
-    <header className='z-10 flex justify-between mb-24 pt-10 items-center'>
-          <div className="lg:text-5xl font-extrabold text-2xl">
-            SITE NAME
+    <header data-aos="fade-down"
+     data-aos-easing="linear" 
+     className='z-10 flex justify-between mb-24 pt-10 items-center'>
+          <div className="xl:text-4xl lg:text-4xl md:text-3xl font-extrabold text-2xl">
+            ERIC JILO
           </div> 
 
           <div className='flex gap-5'>
