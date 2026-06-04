@@ -33,7 +33,7 @@ const Contact = () => {
     };
 
   return (
-    <div className='min-h-screen flex items-center justify-center pt-20 px-4 relative'>
+    <div className='min-h-screen flex items-center justify-center px-4 relative'>
         <div className='w-full max-w-md bg-black/40 p-8 rounded-2xl border border-white/20 backdrop-blur-md shadow-2xl'>
             <h2 className='text-3xl font-bold text-white mb-6 text-center hover:text-gray-200 transition-colors duration-500 ease-in-out cursor-default'>Get In Touch</h2>
 

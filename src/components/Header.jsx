@@ -5,12 +5,12 @@ import {Link} from 'react-router-dom';
 const Header = () => {
   const github = "https://github.com/aycman";
   const linkedin = "https://www.linkedin.com/in/ayricarmity/";
-  const whatsapp = "";
+  const whatsapp = "#";
   return (
     <header data-aos="fade-down"
      data-aos-easing="linear" 
      className='z-10 flex justify-between mb-24 pt-10 items-center'>
-          <div className="xl:text-4xl lg:text-4xl md:text-3xl font-extrabold text-2xl">
+          <div className="xl:text-4xl lg:text-4xl md:text-3xl font-extrabold text-2xl cursor-default">
             ERIC JILO
           </div> 
 
