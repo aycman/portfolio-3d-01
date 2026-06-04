@@ -1,25 +1,27 @@
 import { SparklesAlt, SendAlt } from '@boxicons/react';
 import Spline from "@splinetool/react-spline";
+import {Link} from 'react-router-dom';
 import splineScene from '../assets/scene-clean.splinecode?url';
 
 
 const Hero = () => {
   return (
-    <main className=" h-[80vh] flex flex-1 flex-col justify-between  ">
+    <main className=" h-[80vh] flex flex-1 flex-col justify-between ">
         <div className=" flex py-10 relative">
             {/* texts section */}
             <div  data-aos="fade-right"
                     data-aos-offset="300"
                     data-aos-easing="ease-in-sine" 
                     className=" flex flex-col absolute md:gap-10 lg:top-12 lg:left-4 md:top-36 md:left-1 top-72 left-12 [@media(max-width:380px)]:top-28 [@media(max-width:380px)]:left-8">
-                <div className='introducing-container w-[230px] md:w-[300px] h-[33px] flex items-center justify-center  mb-5 relative'>
+                    {/* Portfolio button */}
+                <Link to="/Portfolio" className='introducing-container w-[230px] md:w-[300px] h-[33px] flex items-center justify-center  mb-5 relative'>
                     <div className=' flex flex-center'>
                         <i className='button-text flex flex-center gap-1'>
                             <SparklesAlt className="w-5 h-5 text-gray-100" />
                              Developer Portfolio
                         </i>
                     </div>
-                </div>
+                </Link>
 
                 <div className='lg:max-w-[500px] sm:max-w-[400px] max-w-[255px] leading-relaxed'>
                     <h1 className='lg:text-5xl sm:text-4xl text-2xl font-extrabold mb-5 bg-gradient-to-r from-[#8b6c2e] to-white bg-clip-text - text-transparent'>
@@ -30,10 +32,11 @@ const Hero = () => {
                     </p>
                 </div>
 
+                {/* Contact me button */}
                 <div className='mt-5'>
-                    <a href="#" className='w-[208px] h-[33px] inline-flex items-center justify-center border border-gray-400 rounded-full text-sm tracking-wider contact-button'>
+                    <Link to="/Contact" href="#" className='w-[208px] h-[33px] inline-flex items-center justify-center border border-gray-400 rounded-full text-sm tracking-wider contact-button'>
                         <i className='contact-text inline-flex items-center justify-center gap-1'><SendAlt className="w-5 h-5 text-gray-300" />CONTACT ME</i>
-                    </a>
+                    </Link>
                 </div>
             </div>
             {/* 3d model section */}

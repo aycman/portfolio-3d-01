@@ -1,7 +1,11 @@
 import { Github, Linkedin, Twitter, Home, Whatsapp } from '@boxicons/react';
+import {Link} from 'react-router-dom';
 
 
 const Header = () => {
+  const github = "https://github.com/aycman";
+  const linkedin = "https://www.linkedin.com/in/ayricarmity/";
+  const whatsapp = "";
   return (
     <header data-aos="fade-down"
      data-aos-easing="linear" 
@@ -11,10 +15,10 @@ const Header = () => {
           </div> 
 
           <div className='flex gap-5'>
-            <a className='text-2xl hover:text-gray-500 duration-300' href="#"><Home /></a>
-            <a className='text-2xl hover:text-gray-500 duration-300'  href="#"><Github /></a>
-            <a className='text-2xl hover:text-gray-500 duration-300'  href="#"><Linkedin /></a>
-            <a className='text-2xl hover:text-gray-500 duration-300'  href="#"><Whatsapp /></a>
+            <Link to="/" className='text-2xl hover:text-gray-500 duration-300' href="#"><Home /></Link>
+            <Link to={github} className='text-2xl hover:text-gray-500 duration-300'  href="#"><Github /></Link>
+            <Link to={linkedin} className='text-2xl hover:text-gray-500 duration-300'  href="#"><Linkedin /></Link>
+            <Link to="/" className='text-2xl hover:text-gray-500 duration-300'  href="#"><Whatsapp /></Link>
 
             {/* <a href="#"><Twitter size="32px" color="#1DA1F2" /></a> */}
           </div>
