@@ -8,20 +8,20 @@ const projectsData = [
         title: 'E-Commerce',
         category: 'Web App',
         description: 'An exclusive online boutique offering a curated collection of authentic luxury watches with secure payment checkout.',
-        image: 'https://placehold.co/600x400/1a1a1a/8b6c2e?text=E-Commerce',
-        techStack: ['React', 'Tailwind', 'Redux'],
-        liveLink: '#',
-        githubLink: '#'
+        image: 'src/assets/e-comerce_watch-store.png',
+        techStack: ['React', 'Redux', 'Tailwind', 'web3forms'],
+        liveLink: 'https://aycman.github.io/e-shop-watches',
+        githubLink: 'https://github.com/aycman/e-shop-watches'
     },
     {
         id: 2,
         title: 'Planet Online Shop',
         category: 'Web App',
         description: 'An exclusive online boutique offering a curated collection of rare, healthy plants with secure payment checkout.',
-        image: 'https://placehold.co/600x400/1a1a1a/8b6c2e?text=Planet-e-shop',
-        techStack: ['React', 'Tailwind', 'Redux'],
-        liveLink: '#',
-        githubLink: '#'
+        image: '/src/assets/e-plantsShopping-1.png',
+        techStack: ['React', 'Redux', 'Tailwind'],
+        liveLink: 'https://aycman.github.io/e-plantShopping',
+        githubLink: 'https://github.com/aycman/e-plantShopping'
     },
     {
         id: 3,
