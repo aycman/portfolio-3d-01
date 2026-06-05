@@ -24,8 +24,8 @@ const App = () => {
 
             <Routes>
               <Route path='/' element={<Hero />} />
-              <Route path='/portfolio' element={<Portfolio />} />
-              <Route path='/contact' element={<Contact />} />
+              <Route path='/Portfolio' element={<Portfolio />} />
+              <Route path='/Contact' element={<Contact />} />
             </Routes>
         </div>
     </HashRouter>

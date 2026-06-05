@@ -3,6 +3,8 @@ import Spline from "@splinetool/react-spline";
 import {Link} from 'react-router-dom';
 import splineScene from '../assets/scene-clean.splinecode?url';
 
+import backgroundImg from '../assets/background.png';
+
 
 const Hero = () => {
   return (
@@ -59,7 +61,7 @@ const Hero = () => {
             </h1>
         </div>
 
-        <img className='absolute -z-20 bg-cover min-w-full min-h-screen top-0 left-0' src="src/assets/background.png" alt="bg-img" />
+        <img className='absolute -z-20 bg-cover min-w-full min-h-screen top-0 left-0' src={backgroundImg} alt="bg-img" />
 
     </main>    
 )
