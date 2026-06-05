@@ -1,4 +1,4 @@
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import {HashRouter as Router, Routes, Route, HashRouter} from 'react-router-dom';
 import Header from './components/Header';
 import Hero from './components/Hero'
 import React, {useEffect} from 'react';
@@ -18,17 +18,17 @@ const App = () => {
     })
   })
   return (
-    <Router>
-      <div  className='container mx-auto px-12 h-screen flex-col '>
-          <Header />
+    <HashRouter>
+        <div  className='container mx-auto px-12 h-screen flex-col '>
+            <Header />
 
-          <Routes>
-            <Route path='/' element={<Hero />} />
-            <Route path='/portfolio' element={<Portfolio />} />
-            <Route path='/contact' element={<Contact />} />
-          </Routes>
-      </div>
-    </Router>
+            <Routes>
+              <Route path='/' element={<Hero />} />
+              <Route path='/portfolio' element={<Portfolio />} />
+              <Route path='/contact' element={<Contact />} />
+            </Routes>
+        </div>
+    </HashRouter>
   );
 }
 
