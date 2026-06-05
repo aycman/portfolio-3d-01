@@ -1,6 +1,10 @@
 import React from 'react'
 import {useState, useEffect} from 'react';
 
+import watchStoreImg from '../assets/e-comerce_watch-store.png';
+import plantShoppingImg from '../assets/e-plantsShopping-1.png';
+import backgroundImg from '../assets/background.png';
+
 // an array of your projects
 const projectsData = [
     {
@@ -8,7 +12,7 @@ const projectsData = [
         title: 'E-Commerce',
         category: 'Web App',
         description: 'An exclusive online boutique offering a curated collection of authentic luxury watches with secure payment checkout.',
-        image: 'src/assets/e-comerce_watch-store.png',
+        image: watchStoreImg,
         techStack: ['React', 'Redux', 'Tailwind', 'web3forms'],
         liveLink: 'https://aycman.github.io/e-shop-watches',
         githubLink: 'https://github.com/aycman/e-shop-watches'
@@ -18,7 +22,7 @@ const projectsData = [
         title: 'Planet Online Shop',
         category: 'Web App',
         description: 'An exclusive online boutique offering a curated collection of rare, healthy plants with secure payment checkout.',
-        image: '/src/assets/e-plantsShopping-1.png',
+        image: plantShoppingImg,
         techStack: ['React', 'Redux', 'Tailwind'],
         liveLink: 'https://aycman.github.io/e-plantShopping',
         githubLink: 'https://github.com/aycman/e-plantShopping'
@@ -193,7 +197,7 @@ const Portfolio = () => {
         </div>
         
         {/* bg image */}
-        <img className='fixed -z-20 bg-cover min-w-full h-screen top-0 left-0' src="src/assets/background.png" alt="bg-img" />
+        <img className='fixed -z-20 bg-cover min-w-full h-screen top-0 left-0' src={backgroundImg} alt="bg-img" />
 
         {/* overlay gradient fot better readability  */}
         <div className='fixed -z-10 inset-0 bg-black/10 pointer-events-none'></div>
