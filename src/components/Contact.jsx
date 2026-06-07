@@ -1,5 +1,6 @@
 import React from 'react'
 import {useState} from 'react';
+import backgroundImg from '../assets/background.png'
 
 const Contact = () => {
     const [result, setResult] = useState("");
@@ -71,7 +72,7 @@ const Contact = () => {
             <span className='block text-center mt-4 text-sm text-gray-300'>{result}</span>
         </div>
 
-        <img className='fixed -z-20 bg-cover min-w-full min-h-screen top-0 left-0' src="./src/assets/background.png" alt='bg-img' />
+        <img className='fixed -z-20 bg-cover min-w-full min-h-screen top-0 left-0' src={backgroundImg} alt='bg-img' />
     </div>
 
   );
